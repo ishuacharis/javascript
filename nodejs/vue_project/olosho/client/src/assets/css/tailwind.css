@@ -1,0 +1,59 @@
+:root{
+    --bg-color: rgba(0, 0, 0, .5);
+}
+@tailwind base;
+@tailwind components;
+
+    .top-left-nav-item{
+        @apply block border-b border-transparent font-bold py-4 mr-4 text-gray-600
+    }
+    .top-left-nav-item:hover{
+        @apply border-pink-500
+    }
+    .top-right-nav-item {
+        @apply text-gray-700 pb-4 border-b-2 border-solid border-transparent no-underline font-light font-bold mr-4;
+    }
+
+    .top-right-nav-item:hover {
+        @apply text-pink-600 border-pink-600;
+    }
+    .input-field{
+        @apply block border border-gray-200 appearance-none rounded w-full h-8 py-1 px-3 text-gray-700 text-sm leading-tight;
+    }
+    .input-field:focus{
+        @apply outline-none border-pink-200
+    }
+    .error {
+        @apply text-xs text-pink-500 font-semibold pt-2;
+    }
+    .flat-button{
+        @apply bg-transparent text-pink-300 font-bold py-2 px-4 rounded border-2 border-pink-300;
+    }
+    .flat-button:hover{
+        @apply outline-none shadow-none text-pink-500 border-pink-500;
+    }
+    .modal-overlay{
+        @apply fixed top-0 left-0 flex justify-center items-center w-full h-full z-40
+    }
+    .modal {
+        @apply rounded-lg shadow-2xl opacity-100 flex flex-col justify-center
+     }
+    .modal-header{
+        @apply relative flex border-solid justify-center border-b-2 border-pink-500 py-4
+    }
+    .modal-body{
+        @apply border-solid border-b-2 border-pink-500 flex flex-col justify-center items-center py-4
+    }
+    .btn-cancel{
+        @apply bg-transparent px-4 py-2 rounded-lg text-pink-500  mr-2
+    }
+    .btn-cancel:hover{
+        @apply bg-gray-100 text-pink-600
+    }
+    .btn-apply{
+        @apply bg-pink-500 px-4 py-2 rounded-lg text-white font-bold
+    }
+    .btn-apply:hover{
+        @apply bg-pink-600
+    }
+@tailwind utilities;
